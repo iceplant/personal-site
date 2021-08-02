@@ -1,0 +1,21 @@
+:root {
+  --off-white: #CCDBDC;
+  --very-light-blue: #9AD1D4;
+  --light-blue: #80CED7;
+  --dark-blue: #007EA7;
+  
+  --very-dark-blue: #003249;
+  --main-text-color: var(--off-white);
+  --body-text-color: var(--very-light-blue);
+  --nav-background: var(--very-light-blue);
+  --nav-text: var(--ver-dark-blue);
+}
+
+#comment-block {
+  /* style={{border:'2px red solid'}} */
+  border: '2px red solid';
+  /* padding: 50px 50px 50px 50px;
+  margin: 10px 10px 10px 500px; */
+  /* position: absolute;
+  left: 100px; */
+}

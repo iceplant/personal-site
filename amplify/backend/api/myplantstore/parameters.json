@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "myplantstore",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authpersonalwebsite090a758b",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

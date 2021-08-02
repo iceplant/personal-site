@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+  --off-white: #CCDBDC;
+  --very-light-blue: #9AD1D4;
+  --light-blue: #80CED7;
+  --dark-blue: #007EA7;
+  
+  --very-dark-blue: #003249;
+  --main-text-color: var(--off-white);
+  --body-text-color: var(--very-light-blue);
+  --nav-background: var(--very-light-blue);
+  --nav-text: var(--ver-dark-blue);
+}
+
+* {
+  color: var(--main-text-color);
+  font-family: 'Audiowide', sans-serif;
+  background-color: var(--very-dark-blue);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--nav-background);
+}
+
+.nav-list {
+  display: flex;
+  background-color: var(--very-light-blue);
+  margin: 0px;
+  list-style-type: none;
+}
+
+/* .heading.f.o.r.c.e {
+
+} */
+
+
+.nav-list-left {
+  flex-direction: row;
+}
+
+.nav-list-right {
+  flex-direction: row-reverse;
+}
+
+.nav-item {
+  background-color: var(--light-grey);
+  font-size: 30px;
+  text-decoration: none;
+  border: none;
+  color: var(--dark-blue);
+  margin: 0px 20px 0px 20px;
+}
+
+a {
+  color: #007EA7;
+  text-decoration: none;
+  margin: 10px 20px 10px 20px;
+}
+
+.nav-item:hover {
+  background-color: #80CED7;
+}
+
+.section {
+  /* background-color: #003249; */
+  color: #CCDBDC;
+  margin: 0px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  margin: 10px;
+  font-size: 30px;
+  color: var(--body-text-color);
+}
+
+p {
+  font-size: 30px;
+  color: var(--body-text-color);
+}
+
+.even-section {
+  background-color: #007EA7;
+}
+
+#odd-section { 
+  background-color: #9AD1D4;
+}
+
+#projects {
+  flex-grow: 4;
+}
+
+
+#project-tile-container {
+  border: 2px red solid;
+  margin: 10px 300px 10px 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+/*   
+  tried unsuccessfully to do a grid. I think flex might be better actually
+  flex: 1;
+  display: grid;
+  grid-template-colums: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px; */
+}
+
+.project-tile {
+  border: 2px green solid;
+  margin: 30px;
+}
+
+.project-link {
+  border:"solid red 2px";
+} 
+
+hr {
+  background-color: var(--off-white);
+}
+
+.contact-details {
+  color: var(--very-light-blue);
+}
+
+#text-columns {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 300px 10px 300px;
+}
+
+#text-column {
+  width: 500px;
+  margin: 0px 100px 0px 100px;
+}
