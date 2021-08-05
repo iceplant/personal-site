@@ -14,6 +14,16 @@
     "categories": {
       "auth": {
         "personalwebsite090a758b": {}
+      },
+      "function": {
+        "processPayment": {
+          "deploymentBucketName": "amplify-personalwebsite-dev-191712-deployment",
+          "s3Key": "amplify-builds/processPayment-34702b3933386c4f4e55-build.zip"
+        },
+        "createOrder": {
+          "deploymentBucketName": "amplify-personalwebsite-dev-191712-deployment",
+          "s3Key": "amplify-builds/createOrder-4b6f49305467475a4a50-build.zip"
+        }
       }
     }
   }
