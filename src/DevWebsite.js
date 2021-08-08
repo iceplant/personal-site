@@ -1,8 +1,10 @@
 import './DevWebsite.css'
+import NavBar from './nav-bar';
 
 const DevWebsite = (props) => (
     <div>
-      <nav>
+      <NavBar props={props}/> 
+      {/* <nav>
       <div class='navbar'>
       <ul class='nav-list nav-list-left'>
         <li class='nav-item'>
@@ -27,7 +29,7 @@ const DevWebsite = (props) => (
         </li>
       </ul>
       </div>
-      </nav>
+      </nav> */}
     
     
       <section id='welcome-section' class='section odd-section'>

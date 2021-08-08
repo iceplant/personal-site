@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+import NavBar from './nav-bar';
+
+
 class CommentsSection extends React.Component {
   constructor(props) {
     super(props);
@@ -24,6 +27,7 @@ class CommentsSection extends React.Component {
   render() {
     return (
       <div>
+        <NavBar props={this.props}/> 
         <p>{this.state.comments.map((comment, commentIndex) => (
           <div id='comment-block' style={{border:'2px red solid'}}>
             <div>{comment}</div>
