@@ -18,11 +18,11 @@
       "function": {
         "processPayment": {
           "deploymentBucketName": "amplify-personalwebsite-dev-191712-deployment",
-          "s3Key": "amplify-builds/processPayment-34702b3933386c4f4e55-build.zip"
+          "s3Key": "amplify-builds/processPayment-576d6141717551734a70-build.zip"
         },
         "createOrder": {
           "deploymentBucketName": "amplify-personalwebsite-dev-191712-deployment",
-          "s3Key": "amplify-builds/createOrder-4b6f49305467475a4a50-build.zip"
+          "s3Key": "amplify-builds/createOrder-363546586b6946366439-build.zip"
         }
       }
     }
