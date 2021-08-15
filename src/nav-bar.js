@@ -12,7 +12,7 @@ const NavBar = (props) => (
           <button class='nav-item' onClick={() => props.setPage('PlantShop')}>Plant Shop</button>
         </li>
         <li class='nav-item'>
-          <button class='nav-item' onClick={() => props.setPage('Home')}>Home</button>
+          <button class='nav-item' onClick={() => props.setPage('Dev')}>Home</button>
         </li>
       </ul>
       </div>
