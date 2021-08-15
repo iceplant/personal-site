@@ -3,20 +3,9 @@ import NavBar from './nav-bar';
 
 const DevWebsite = (props) => (
     <div>
-      <NavBar props={props}/> 
-      {/* <nav>
+      <NavBar setPage={props.setPage}/> 
+      <nav>
       <div class='navbar'>
-      <ul class='nav-list nav-list-left'>
-        <li class='nav-item'>
-          <button class='nav-item' onClick={() => props.setPage('Blog')}>Blog</button>
-        </li>
-        <li class='nav-item'>
-          <button class='nav-item' onClick={() => props.setPage('Dance')}>Dance</button>
-        </li>
-        <li class='nav-item'>
-          <button class='nav-item' onClick={() => props.setPage('PlantShop')}>Plant Shop</button>
-        </li>
-      </ul>
       <ul class='nav-list nav-list-right'>
         <li class='nav-item'>
           <a class='nav-item' href='#contact'>Contact</a>
@@ -29,7 +18,7 @@ const DevWebsite = (props) => (
         </li>
       </ul>
       </div>
-      </nav> */}
+      </nav>
     
     
       <section id='welcome-section' class='section odd-section'>

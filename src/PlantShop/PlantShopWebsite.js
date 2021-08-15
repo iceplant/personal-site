@@ -1,4 +1,7 @@
 import React from 'react';
+
+import NavBar from '../nav-bar';
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { CartProvider } from './context/cart';
 
@@ -7,8 +10,10 @@ import Home from './pages/Home'
 import Cart from './pages/cart'
 import Plants from './pages/plants'
 
-const PlantShopWebsite = () => {
+const PlantShopWebsite = (props) => {
   return (
+    <div>
+    <NavBar setPage={props.setPage}/> 
     <CartProvider>
       <React.StrictMode>
     <Router>
@@ -27,7 +32,7 @@ const PlantShopWebsite = () => {
     </Router>
     </React.StrictMode>
     </CartProvider>
-    
+    </div>
   );
 }
 export default PlantShopWebsite;

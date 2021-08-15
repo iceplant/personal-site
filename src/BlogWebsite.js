@@ -27,7 +27,6 @@ class CommentsSection extends React.Component {
   render() {
     return (
       <div>
-        <NavBar props={this.props}/> 
         <p>{this.state.comments.map((comment, commentIndex) => (
           <div id='comment-block' style={{border:'2px red solid'}}>
             <div>{comment}</div>
@@ -60,9 +59,11 @@ return (<div>
 
 // const posts = [TaxesPost, NeutrinoPost];
 
-const BlogWebsite = () => {
+const BlogWebsite = (props) => {
   localStorage.setItem("lastname", "Smith");
-  return (<div><TaxesPost /> <CommentsSection removeSelf={()=>{}}/></div>)
+  return (<div>
+    <NavBar setPage={props.setPage}/> 
+    <TaxesPost /> <CommentsSection removeSelf={()=>{}}/></div>)
 };
 
 
