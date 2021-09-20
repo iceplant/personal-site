@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { API, graphqlOperation } from "aws-amplify";
+import { API, graphqlOperation } from "aws-amplify";
 import { v4 as uuidv4 } from "uuid";
 // import { listPlants } from "../api/queries";
 // import { processOrder } from "../api/mutations";
@@ -30,19 +30,19 @@ const PlantProvider = ({ children }) => {
 
   const fetchPlants = async () => {
     try {
-      // setLoading(true);
-      // // Switch authMode to API_KEY for public access
-      // const { data } = await API.graphql({
-      //   query: listPlants,
-      //   authMode: "API_KEY"
-      // });
-      // const plants = data.listplants.items;
-      // const featured = plants.filter((plant) => {
-      //   return !!plant.featured;
-      // });
-      // setPlants(plants);
-      // setFeatured(featured);
-      // setLoading(false);
+      setLoading(true);
+      // Switch authMode to API_KEY for public access
+      const { data } = await API.graphql({
+        // query: listPlants,
+        authMode: "API_KEY"
+      });
+      const plants = data.listplants.items;
+      const featured = plants.filter((plant) => {
+        return !!plant.featured;
+      });
+      setPlants(plants);
+      setFeatured(featured);
+      setLoading(false);
     } catch (err) {
       console.log(err);
     }
