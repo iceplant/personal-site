@@ -111,7 +111,7 @@ p {
 
 
 #project-tile-container {
-  border: 2px red solid;
+  /* border: 2px red solid; */
   margin: 10px 300px 10px 300px;
   display: flex;
   flex-direction: row;
@@ -127,7 +127,7 @@ p {
 }
 
 .project-tile {
-  border: 2px green solid;
+  /* border: 2px green solid; */
   margin: 30px;
 }
 
