@@ -66,10 +66,9 @@ const DevWebsite = (props) => (
         <div href="www.thepeoplearetheplace.org" class="project-tile">
           The People Are The Place
         </div>
-        <div class="project-tile">Research on Neutrio Masses</div>
-        <div class="project-tile">The People Are The Place</div>
-        {/* <div class="project-tile">Double Pendulum</div> */}
-        {/* <div class="project-tile">GitHub-TickTick Ingestor</div> */}
+        <div href="https://arxiv.org/abs/1802.08694" class="project-tile">
+          Research on Neutrio Masses
+        </div>
       </div>
     </section>
 
