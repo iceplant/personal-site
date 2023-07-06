@@ -49,7 +49,7 @@ const DevWebsite = (props) => (
     </section>
 
     <section id="projects" class="section odd-section">
-      Projects
+      <u>Projects</u>
       <div id="project-tile-container">
         <div class="project-tile">
           <a
@@ -58,18 +58,29 @@ const DevWebsite = (props) => (
             class="project-link"
             rel="noreferrer"
           >
-            <p class="project-title">
-              <span class="code">Meta Orbits in CSS</span>
-            </p>
+            <span class="code">Meta Orbits in CSS</span>
           </a>
         </div>
-        <div href="www.thepeoplearetheplace.org" class="project-tile">
-          The People Are The Place
+        <div class="project-tile">
+          <a
+            href="www.thepeoplearetheplace.org"
+            // target="_blank"
+            class="project-link"
+            rel="noreferrer"
+          >
+            <span class="code">The People Are The Place</span>
+          </a>
         </div>
-        <div class="project-tile">Research on Neutrio Masses</div>
-        <div class="project-tile">The People Are The Place</div>
-        {/* <div class="project-tile">Double Pendulum</div> */}
-        {/* <div class="project-tile">GitHub-TickTick Ingestor</div> */}
+        <div class="project-tile">
+          <a
+            href="https://arxiv.org/abs/1802.08694"
+            // target="_blank"
+            class="project-link"
+            rel="noreferrer"
+          >
+            <span class="code">Research on Neutrino Masses</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -84,7 +95,7 @@ const DevWebsite = (props) => (
         <a
           id="profile-link"
           href="https://github.com/iceplant"
-          target="_blank"
+          // target="_blank"
           class="btn contact-details even-section"
         >
           <i class="fab fa-github even-section"></i>
